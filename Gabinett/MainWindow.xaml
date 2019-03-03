@@ -1,0 +1,24 @@
+﻿<Window x:Name="logowanie" x:Class="Gabinett.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+   Title="Logowanie" Height="267" Width="329">
+    <Grid Margin="0,0,-8,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Image/stom-grafika.jpg"/>
+        </Grid.Background>
+
+        <Label x:Name="Nazwa" Content="Użytkownik" HorizontalAlignment="Left" Height="30" Margin="45,60,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="Hasło" Content="Hasło" HorizontalAlignment="Left" Height="25" Margin="45,105,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="zaloguj" Content="Zaloguj" HorizontalAlignment="Left" Height="30" Margin="130,151,0,0" VerticalAlignment="Top" Width="80" Click="Zaloguj_Click" Background="#00000000" BorderBrush="#00707070"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="30" Margin="120,116,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#33ABADB3" Background="Transparent"/>
+        <TextBox x:Name="nick" HorizontalAlignment="Left" Height="30" Margin="120,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Background="#00000000" BorderBrush="#33ABADB3"/>
+    </Grid>
+</Window>
